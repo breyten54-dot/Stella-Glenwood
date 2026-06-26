@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Stella@Glenwood | Modern Dining in Glenwood</title>
+  <meta name="description" content="Stella@Glenwood offers modern cuisine, warm hospitality, and unforgettable dining experiences in Glenwood, South Africa." />
+  <link rel="canonical" href="https://www.stella@glenwood.co.za" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header class="header">
+    <nav class="nav container">
+      <a href="#" class="logo">Stella@Glenwood</a>
+      <button class="nav-toggle" aria-label="Open menu" aria-expanded="false">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+      <ul class="nav-links">
+        <li><a href="#about">About</a></li>
+        <li><a href="#menu">Menu</a></li>
+        <li><a href="#visit">Visit</a></li>
+        <li><a href="#reservations" class="btn btn-small">Reservations</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="hero-content">
+        <p class="eyebrow">Welcome to</p>
+        <h1>Stella@Glenwood</h1>
+        <p class="hero-subtitle">Modern cuisine, warm hospitality, unforgettable moments.</p>
+        <div class="hero-actions">
+          <a href="#menu" class="btn">View Menu</a>
+          <a href="#reservations" class="btn btn-outline">Book a Table</a>
+        </div>
+      </div>
+    </section>
+
+    <section id="about" class="about section">
+      <div class="container grid two-col">
+        <div class="about-text">
+          <h2>Our Story</h2>
+          <p>
+            Nestled in the heart of Glenwood, Stella is a place where bold flavors meet
+            relaxed elegance. Our kitchen celebrates seasonal ingredients, local producers,
+            and the joy of sharing a great meal with good company.
+          </p>
+          <p>
+            From intimate dinners to lively celebrations, every plate is crafted with care
+            and every guest is treated like family.
+          </p>
+        </div>
+        <div class="about-image" aria-label="Elegant restaurant interior"></div>
+      </div>
+    </section>
+
+    <section id="menu" class="menu section">
+      <div class="container">
+        <div class="section-header">
+          <h2>Seasonal Menu</h2>
+          <p>A taste of what's cooking this week.</p>
+        </div>
+        <div class="menu-grid">
+          <article class="menu-card">
+            <h3>Grilled Branzino</h3>
+            <p>Lemon-herb marinade, roasted fennel, charred broccolini.</p>
+            <span class="price">$34</span>
+          </article>
+          <article class="menu-card">
+            <h3>Wild Mushroom Risotto</h3>
+            <p>Arborio rice, truffle oil, parmesan crisp, thyme.</p>
+            <span class="price">$26</span>
+          </article>
+          <article class="menu-card">
+            <h3>Braised Short Rib</h3>
+            <p>Red wine reduction, celery root purée, glazed carrots.</p>
+            <span class="price">$38</span>
+          </article>
+          <article class="menu-card">
+            <h3>Burrata & Heirloom Tomato</h3>
+            <p>Basil pesto, balsamic glaze, toasted sourdough.</p>
+            <span class="price">$18</span>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section id="visit" class="visit section">
+      <div class="container grid two-col">
+        <div class="visit-info">
+          <h2>Visit Us</h2>
+          <address>
+            123 Glenwood Avenue<br />
+            Glenwood, CA 90210
+          </address>
+          <ul class="hours">
+            <li><strong>Mon – Thu</strong> 5:00 pm – 10:00 pm</li>
+            <li><strong>Fri – Sat</strong> 5:00 pm – 11:00 pm</li>
+            <li><strong>Sunday</strong> 4:00 pm – 9:00 pm</li>
+          </ul>
+          <p>
+            <a href="tel:+15551234567">(555) 123-4567</a><br />
+            <a href="mailto:hello@stella@glenwood.co.za">hello@stella@glenwood.co.za</a>
+          </p>
+        </div>
+        <div class="map">
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3306.0!2d-118.25!3d34.05!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMzTCsDAzJzAwLjAiTiAxMTgswrAxNScwMC4wIlc!5e0!3m2!1sen!2sus!4v1"
+            width="100%"
+            height="100%"
+            style="border:0;"
+            allowfullscreen=""
+            loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"
+            title="Stella@Glenwood location"
+          ></iframe>
+        </div>
+      </div>
+    </section>
+
+    <section id="reservations" class="reservations section">
+      <div class="container narrow">
+        <h2>Make a Reservation</h2>
+        <p>Reserve your table and we'll take care of the rest.</p>
+        <form class="reservation-form" action="#" method="post">
+          <div class="form-group">
+            <label for="name">Name</label>
+            <input type="text" id="name" name="name" required />
+          </div>
+          <div class="form-group">
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" required />
+          </div>
+          <div class="form-row">
+            <div class="form-group">
+              <label for="date">Date</label>
+              <input type="date" id="date" name="date" required />
+            </div>
+            <div class="form-group">
+              <label for="guests">Guests</label>
+              <input type="number" id="guests" name="guests" min="1" max="20" value="2" required />
+            </div>
+          </div>
+          <div class="form-group">
+            <label for="requests">Special Requests</label>
+            <textarea id="requests" name="requests" rows="3"></textarea>
+          </div>
+          <button type="submit" class="btn">Request Table</button>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container">
+      <p>&copy; <span id="year"></span> Stella@Glenwood. All rights reserved. | <a href="https://www.stella@glenwood.co.za">www.stella@glenwood.co.za</a></p>
+      <div class="socials">
+        <a href="#" aria-label="Instagram">Instagram</a>
+        <a href="#" aria-label="Facebook">Facebook</a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
