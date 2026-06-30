@@ -23,11 +23,4 @@ document.addEventListener('DOMContentLoaded', () => {
     yearSpan.textContent = String(new Date().getFullYear());
   }
 
-  // Basic form handler
-  const form = document.querySelector('.reservation-form');
-  form?.addEventListener('submit', (event) => {
-    event.preventDefault();
-    alert('Thank you! Your reservation request has been received. We will confirm shortly.');
-    form.reset();
-  });
 });
